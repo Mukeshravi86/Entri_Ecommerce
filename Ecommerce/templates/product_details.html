@@ -1,0 +1,19 @@
+
+<!Doctype html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>product details</title>
+    </head>
+    <body>
+        <h1>{{product.name}}</h1>
+        <p>Image: <img src="{{ product.image. }}"></p>
+        <p>price:{{product.price}}</p>
+        <p>details:{{product.details}}</p>
+        <a href="{% url 'edit_product' product.id %}">edit</a>
+        <a href="{% url 'delete_product' product.id%}">delete</a>
+
+    </body>
+</html> 
+

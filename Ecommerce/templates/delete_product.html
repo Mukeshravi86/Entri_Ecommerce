@@ -1,0 +1,19 @@
+
+
+<!Doctype html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title> delete product</title>
+    </head>
+    <body>
+        <h1> delete product</h1>
+        <p>Are you sure ?...</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <input type="submit"  value="confirm">
+    </form>
+    <a href="{% url 'product_list' %}">cancel</a>
+    </body>
+    </html>

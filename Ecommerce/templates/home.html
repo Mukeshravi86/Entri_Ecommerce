@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="
+    ">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <h1>Product_list</h1>
+
+    <form method="post" action="logout">
+        {%csrf_token%}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Logout">
+    </form>
+</body>
+</html>

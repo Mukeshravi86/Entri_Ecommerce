@@ -1,0 +1,14 @@
+
+
+<h2>Login</h2>
+<form method="post">
+    {%csrf_token%}
+    <table>
+        {{form.as_table}}
+    </table>
+
+<input type='Submit' value="Login" >   
+Not a User ??: <a href="{% url 'register' %}">register</a>
+
+{{msg}}
+</form>
